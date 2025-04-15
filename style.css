@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: black;
+ 
+}
+
+/* Header Section */
+
+header{
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  border-bottom: 2px solid #8000ff;
+}
+.decor{
+  color: white ;
+}
+header .title h3{
+  font-size: 22px;
+  margin-left: 23px;
+  font-weight:bolder; 
+} 
+.links a{
+  margin-right: 15px;
+  text-decoration: none;
+}
+.links a:hover{
+  color: #8000ff;
+  border-bottom: 2px solid #8000ff;
+}
+a.decor.active{
+  color: #8000ff;
+  border-bottom: 2px solid #8000ff;
+}
+
+/* Main Body Section */
+
+.content{
+  /* height: 68vh; */
+  margin-top: 95px;
+  margin-bottom: 30px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.content .left_div{
+  width: 265px;
+  height: 260px;
+}
+.content .left_div .btn{
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #8000ff;
+  color: white;
+
+}
+.content .left_div .btn:hover{
+  background-color: white;
+  color: #8000ff;
+}
+.left_div .color{
+  color: #8000ff;
+  font-size: 28px;
+}
+.right_div img{
+  width: 265px;
+  height: 300px;
+  border-radius: 50%;
+  border: 8px solid #8000ff;
+}
+.content .left_div{
+  order: 1;
+}
+.content .right_div{
+  order: 2;
+}
+@media (max-width: 600px) {
+  .content .right_div{
+    order: 1;
+  }
+  .content .right_div img{
+    width: 265px;
+    height: 260px;
+}
+  
+  .content .left_div{
+    order: 2;
+    margin-top: 52px;
+    width: 265px;
+    margin-left: 88px;
+
+
+  }
+  .content{
+    flex:1 1 100%;
+  }
+  .about .aboutme p{
+    margin-right: 50px;
+  }
+  .links{
+    display: none;
+  }
+ 
+}
+
+/* Heading */
+
+.heading{
+  text-align: center;
+  height: 18vh;
+  line-height: 20vh;
+  font-size: 30px;
+  color: #8000ff;
+}
+
+
+/* About Section */
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.about .aboutme p{
+  padding: 20px;
+  border:1px solid white;
+  width:388px;
+  margin-left: 50px;
+  height: 100%;
+  line-height: 1.8;
+
+}
+.about .program img{
+  width: 400px;
+  margin-left: 20px;
+}
+.about .aboutme{
+  flex-basis: 50%;
+  padding: 20px;
+ 
+}
+
+.about .program{
+  flex-basis: 50%;
+}
+/* Certification Section */
+
+.card_section {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+}
+.card {
+  background-color: #b883ee;
+  margin: 20px;
+  width: 200px;
+  height: 50vh;
+  overflow: hidden;
+  border: 2px solid #8000ff ;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+}
+.card_section .card .text-item {
+  margin: 4px 11px;
+  background-color: #b883ee;
+}
+.card_section .card button {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #8000ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.card_section .card button:hover{
+  background-color:white ;
+  color: #8000ff;
+}
+.card .img img {
+  width: 200px;
+  height: 180px;
+}
+.text-item p{
+  background-color: #b883ee;
+
+}
+
+
+/* Education Section */
+
+.education{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+}
+.education .div{
+  padding: 20px;
+  margin: 40px;
+  /* width: 50%; */
+}
+.education h2,.education h3,.education h4{
+  background-color: #5c4f69;
+  padding: 15px;
+}
+.cv-btn{
+  padding: 20px 40px;
+  background-color: #8000ff;
+  text-align: center;
+  border-radius: 8px;
+  border: none;
+}
+.cv-btn:hover{
+  background-color: white;
+  color: #8000ff;
+}
+.cv-btn:hover a{
+  background-color: white;
+  color: #8000ff;
+}
+.cv-btn a{
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  background-color: #8000ff;
+}
+/* Projects Section */
+
+.project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.project .left{
+  flex-basis: 50%;
+  padding: 20px;
+}
+.project .left img{
+  width: 400px;
+}
+.project .right{
+  flex-basis: 50%;
+ 
+  /* margin-right: 10px; */
+  width:388px;
+
+}
+.project .right>div{
+  margin-right: 30px;
+  border: 2px solid white;
+  padding: 20px;
+
+}
+
+
+/* Responsive design section */
+
+@media (min-width: 768px) and (max-width:768px) { 
+   .card_section >div{
+    flex:1 1 50%;
+    padding: 10px;
+    text-align: center;
+   }
+ }
+
+ /* Contact me Section */
+
+ .contact{
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .contact .message {
+  /* background-color: #aea1ba; */
+  width: 420px;
+  height: 405px;
+
+
+ }
+ .contact .message input, .contact .message textarea{
+  padding:10px;
+  margin-bottom: 35px;
+  border-radius: 5px;
+  width: 100%;
+  background-color: azure;
+  resize: vertical;
+ }
+ .contact .message .message-btn{
+  padding: 8px 16px;
+  color: white;
+  background: #8000ff;
+  border-radius: 5px;
+  border:none;
+  text-align: center;
+ }
+ .contact .message .message-btn:hover{
+  background-color: white;
+  color: #8000ff;
+ }
+ .btn-msg{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+
+ /* Footer Section */
+ .footer {
+  margin-top: 30px;
+ }
+ .footer ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+ }
+ .footer ul img{
+  width: 34px;
+  border:3px solid white;
+  border-radius: 50%;
+  background-color: white;
+ }
+ .footer ul img:hover{
+  background-color: #8000ff;
+  border-color: #8000ff;
+ }
+ .footer ul li{
+  margin-right: 20px;
+  list-style: none;
+ }
+ .footer ul li:hover{
+  color: #8000ff;
+ }
+ .footer ul li a{
+  text-decoration: none;
+  color: white;
+ }
+ .footer ul li a:hover{
+    color: #8000ff;
+ }
+ .footer-txt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .footer-txt p{
+  font-size: 12px;
+  color: white;
+  margin-top: 14px;
+ }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .about .program img {
+    width: 350px;
+  }
+  .about .aboutme p {
+    width: 350px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about {
+    flex-direction: column;
+  }
+  .about .program img {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .about .aboutme p {
+    width: 300px;
+    margin: 20px auto;
+  }
+  .card_section {
+    justify-content: center;
+  }
+  .card {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .links a {
+    margin: 5px 10px;
+  }
+  .content {
+    margin-top: 50px;
+  }
+  .card {
+    width: 80%;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project .left img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .project .right {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact .message {
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .content .left_div {
+    width: 100%;
+    text-align: center;
+    margin-left: 0;
+  }
+  .content .right_div img {
+    width: 200px;
+    height: 200px;
+  }
+  .card {
+    width: 90%;
+  }
+  .education {
+    flex-direction: column;
+  }
+  .education .div {
+    width: 90%;
+    margin: 10px auto;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer ul {
+    margin: 10px 0;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 20px 0;
+    z-index: 1000;
+  }
+}
