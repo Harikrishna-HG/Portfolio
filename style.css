@@ -505,3 +505,13 @@ body {
     z-index: 1000;
   }
 }
+
+/* Add smooth transitions */
+button, a, .card, .links a {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Add glow effect to buttons */
+.btn:hover, .cv-btn:hover, .message-btn:hover {
+  box-shadow: 0 0 15px #8000ff, 0 0 30px #5a00cc;
+}
