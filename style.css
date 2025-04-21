@@ -16,8 +16,8 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: black;
-  border-bottom: 2px solid #8000ff;
+  background: linear-gradient(90deg, #8000ff, #5a00cc);
+  border-bottom: none;
 }
 .decor{
   color: white ;
@@ -42,6 +42,10 @@ a.decor.active{
 
 /* Main Body Section */
 
+body {
+  background: linear-gradient(180deg, #000000, #1a1a1a);
+}
+
 .content{
   /* height: 68vh; */
   margin-top: 95px;
@@ -62,13 +66,13 @@ a.decor.active{
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
-  background: #8000ff;
+  background: linear-gradient(90deg, #8000ff, #5a00cc);
   color: white;
 
 }
 .content .left_div .btn:hover{
-  background-color: white;
-  color: #8000ff;
+  background: linear-gradient(90deg, #5a00cc, #8000ff);
+  color: white;
 }
 .left_div .color{
   color: #8000ff;
@@ -178,6 +182,11 @@ a.decor.active{
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 .card_section .card .text-item {
   margin: 4px 11px;
@@ -186,14 +195,14 @@ a.decor.active{
 .card_section .card button {
   margin-top: 10px;
   padding: 8px;
-  background-color: #8000ff;
+  background: linear-gradient(90deg, #8000ff, #5a00cc);
   color: white;
   border: none;
   border-radius: 8px;
 }
 .card_section .card button:hover{
-  background-color:white ;
-  color: #8000ff;
+  background: linear-gradient(90deg, #5a00cc, #8000ff);
+  color: white;
 }
 .card .img img {
   width: 200px;
@@ -224,24 +233,24 @@ a.decor.active{
 }
 .cv-btn{
   padding: 20px 40px;
-  background-color: #8000ff;
+  background: linear-gradient(90deg, #8000ff, #5a00cc);
   text-align: center;
   border-radius: 8px;
   border: none;
 }
 .cv-btn:hover{
-  background-color: white;
-  color: #8000ff;
+  background: linear-gradient(90deg, #5a00cc, #8000ff);
+  color: white;
 }
 .cv-btn:hover a{
-  background-color: white;
-  color: #8000ff;
+  background: linear-gradient(90deg, #5a00cc, #8000ff);
+  color: white;
 }
 .cv-btn a{
   text-decoration: none;
   font-size: 15px;
   color: white;
-  background-color: #8000ff;
+  background: linear-gradient(90deg, #8000ff, #5a00cc);
 }
 /* Projects Section */
 
@@ -309,14 +318,14 @@ a.decor.active{
  .contact .message .message-btn{
   padding: 8px 16px;
   color: white;
-  background: #8000ff;
+  background: linear-gradient(90deg, #8000ff, #5a00cc);
   border-radius: 5px;
   border:none;
   text-align: center;
  }
  .contact .message .message-btn:hover{
-  background-color: white;
-  color: #8000ff;
+  background: linear-gradient(90deg, #5a00cc, #8000ff);
+  color: white;
  }
  .btn-msg{
   display: flex;
