@@ -62,3 +62,19 @@ function typeWriter() {
 
 // Start typing animation when page loads
 window.addEventListener('load', typeWriter);
+
+const toggleButton = document.getElementById('dark-mode-toggle');
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  // Save the user's preference in localStorage
+  const isDarkMode = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDarkMode);
+});
+
+// Load the user's preference on page load
+window.addEventListener('DOMContentLoaded', () => {
+  const isDarkMode = localStorage.getItem('darkMode') === 'true';
+  if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+  }
+});
