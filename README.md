@@ -38,3 +38,36 @@ This portfolio website is designed to highlight my journey as a Computer Science
 - **JavaScript**: For interactivity and animations.
 
 ## File Structure
+
+## How to Run
+
+1. Clone the repository or download the files.
+2. Open `index.html` in any modern web browser.
+3. Explore the website and its features.
+
+## Screenshots
+
+### Home Section
+![Home Section](./Assets/profile.png)
+
+### About Me Section
+![About Me Section](./Assets/program.png)
+
+### Certifications Section
+![Certifications Section](./Assets/UC-Web%20Development.png)
+
+### Projects Section
+![Projects Section](./Assets/web-design.jpeg)
+
+## Contact
+
+Feel free to reach out via the contact form on the website or through the following platforms:
+
+- **GitHub**: [github.com/your-profile](https://github.com/your-profile)
+- **LinkedIn**: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- **Facebook**: [facebook.com/your-profile](https://facebook.com/your-profile)
+- **Email**: [example@gmail.com](mailto:example@gmail.com)
+
+---
+
+© 2025 Harikrishna Gautam | All Rights Reserved
